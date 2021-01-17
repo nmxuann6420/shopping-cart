@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Product extends Component {
     render() {
         return (
-            <div className="row product-wrapper">
+            <div className="row">
                 <div className="col l-12">
                     <p className="text">Products</p>
                 </div>

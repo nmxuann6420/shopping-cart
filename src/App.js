@@ -3,6 +3,7 @@ import './Styles/Grid.css';
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Product from './components/Product';
+import Bill from './components/Bill';
 
 class App extends Component {
     render() {
@@ -17,17 +18,10 @@ class App extends Component {
                         <div className="row">
                             <div className="col l-8">
                                 <Product />
-                                {/* <div className="row">
-                                    <div className="col l-12">
-                                        <div className="box1"></div>
-                                    </div>
-                                </div> */}
                             </div>
 
                             <div className="col l-4">
-                                <div className="box2">
-                                    
-                                </div>
+                                <Bill />
                             </div>
 
                         </div>
