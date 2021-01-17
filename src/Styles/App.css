@@ -109,8 +109,13 @@
 .product-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 12px;
+}
+
+.product-item .product-name {
+    max-width: 150px;
+    width: 100%;
 }
 
 .product-item:last-child {
@@ -118,11 +123,11 @@
 }
 
 .product-item > div {
-    /* margin-left: 100px; */
+    margin-left: 50px;
 }
 
 .product-item .number {
-    /* margin-left: 100px; */
+    margin-left: 100px;
 }
 
 .btn {
