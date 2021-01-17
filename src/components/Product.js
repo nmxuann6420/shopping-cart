@@ -20,7 +20,7 @@ class Product extends Component {
                     <div className="product">
                         <img src={product.image} alt={product.productName} />
                         <p className="product-name">{product.productName}</p>
-                        <p className="price">{product.price}</p>
+                        <p className="price">${product.price}</p>
                         <div className="add-to-cart" onClick={() => this.addToCart(product.id)}>
                             <p>Add to cart</p>
                         </div>
