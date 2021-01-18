@@ -1,8 +1,8 @@
-import './Styles/App.css';
-import './Styles/Grid.css';
+import './styles/App.css';
+import './styles/Grid.css';
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Product from './components/Product';
+import Basket from './components/Basket';
 import Bill from './components/Bill';
 
 class App extends Component {
@@ -51,7 +51,7 @@ class App extends Component {
     }
 
     changeAmountItems(id, inCart) {
-        if (localStorage.getItem('products') !== null) {
+        if (localStorage.getItem('products')) {
             let products = JSON.parse(localStorage.getItem('products'));
             for (let i = 0; i < products.length; i++) {
                 if (products[i].id === id) {
@@ -69,7 +69,7 @@ class App extends Component {
     render() {
         let products = null;
         
-        if (localStorage.getItem('products') !== null) {
+        if (localStorage.getItem('products')) {
             products = JSON.parse(localStorage.getItem('products'));
         } else {
             products = this.state.products;
@@ -85,11 +85,11 @@ class App extends Component {
                     <div className="col l-12 mt-16">
                         <div className="row">
                             <div className="col l-8">
-                                <Product products={products} addToCart={this.addToCart} />
+                                <Basket products={products} addToCart={this.addToCart} />
                             </div>
 
                             <div className="col l-4">
-                                <Bill products={products} changeAmountItems={this.changeAmountItems}/>
+                                <Bill products={products} changeAmountItems={this.changeAmountItems} />
                             </div>
                         </div>
                     </div>

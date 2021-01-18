@@ -2,40 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     font-family: 'Poppins', sans-serif;
 }
 
 .header {
-    height: 100px;
-    margin-top: 16px;
-    padding: 16px;
-    background-color: #e0e0e0;
-    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    height: 100px;
+    margin-top: 16px;
+    padding: 16px;
+
+    background-color: #e0e0e0;
+    border-radius: 8px;
+
 }
 
 .header .title {
     color: rgb(5, 67, 117);
+    
     font-weight: 500;
 }
 
 .header p {
-    font-size: 1.5rem;
-    margin-right: 4rem;
     display: flex;
+    margin-right: 4rem;
+
+    font-size: 1.5rem;
 }
 
 .header p .in-cart {
     width: 2rem;
     height: 2rem;
     display: block;
-    background-color: red;
-    color: rgb(5, 67, 117);
-    text-align: center;
     margin-left: 12px;
     border-radius: 8px;
+
+    background-color: red;
+    color: rgb(5, 67, 117);
+
+    text-align: center;
 }
 
 .mt-16 {
@@ -44,6 +52,7 @@
 
 .product-wrapper {
     background-color: #e0e0e0;
+
     padding: 16px;
     border-radius: 8px;
 }
@@ -51,7 +60,9 @@
 .text {
     font-size: 1.5rem;
     font-weight: 400;
+
     color:rgb(5, 67, 117);
+
     margin-bottom: 16px;
 }
 
@@ -64,12 +75,14 @@
 .product img {
     width: 200px;
     height: 150px;
-    object-fit: cover;
     border-radius: 5px;
+
+    object-fit: cover;
 }
 
 .product p {
     color: #444;
+
     transition: 0.26s linear;
 }
 
@@ -78,13 +91,15 @@
 }
 
 .product .add-to-cart {
+    width: 100%;
     max-width: 150px;
     padding: 4px 0;
-    width: 100%;
     border: 2px solid #444;
     border-radius: 999px;
-    text-align: center;
     margin-top: 6px;
+
+    text-align: center;
+
     cursor: pointer;
     transition: 0.36s linear;
 }
@@ -114,8 +129,8 @@
 }
 
 .product-item .product-name {
-    max-width: 150px;
     width: 100%;
+    max-width: 150px;
 }
 
 .product-item:last-child {
@@ -133,9 +148,10 @@
 .btn {
     width: 30px;
     height: 30px;
-    outline: none;
-    border: none;
     border-radius: 10px;
+    border: none;
+
+    outline: none;
     cursor: pointer;
 }
 
@@ -160,6 +176,4 @@
 .total-bill > div > p:last-child {
     font-weight: 500;
 }
-
-
 
