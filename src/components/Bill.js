@@ -71,7 +71,7 @@ class Bill extends Component {
                 </div>
             )
         } else {
-            a = <p className="empty active">Cart is empty</p>
+            a = <p className="empty">Cart is empty</p>
         }
 
         return (
